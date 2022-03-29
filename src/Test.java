@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Test {
     public static void main(String[] args) {
@@ -28,13 +29,15 @@ class User {
     String sex;
     String Aadhaar;
 
-    public static List<String> alreadyExisted = new ArrayList<>();
+    public static List<User> alreadyExisted = new ArrayList<>();
 
-//    public User(String name, String sex, String Aadhaar) {
-//        this.name = name;
-//        this.sex = sex;
-//        this.Aadhaar = Aadhaar;
-//    }
+    public User(){}
+
+    public User(String name, String sex, String Aadhaar) {
+        this.name = name;
+        this.sex = sex;
+        this.Aadhaar = Aadhaar;
+    }
 
     void setName(String name) {
         this.name = name;
@@ -74,53 +77,27 @@ class User {
         if (op.length != 4) {
             System.out.println("Arguments illegal");
         } else {
-            boolean name_illegal = false;
             boolean Aadhaar_illegal = false;
             boolean Aadhaar_exists = false;
 
-            Pattern pattern = Pattern.
-
-            char[] ch1 = op[1].toCharArray();
-            for (char c : ch1) {
-                if ((c != '_') && !isalpha(c)) {
-                    name_illegal = true;
-                    break;
-                }
-            }
-            if (!Pattern.matches("^[A-Za-z_]$", op[1])) {
+            if (!Pattern.matches("^[A-Za-z_]+$", op[1])) {
                 System.out.println("Name illegal");
-            } else if ((!Objects.equals(op[2], "F") && !op[2].equals("M") && !op[2].equals("O"))) {
+            } else if (!Pattern.matches("^[FMO]$", op[2])) {
                 System.out.println("Sex illegal");
             } else {
-                char[] ch3 = op[3].toCharArray();
-                for (char c : ch3) {
-                    if (!isdigit(c)) {
-                        Aadhaar_illegal = true;
-                        break;
-                    }
-                }
-                if (!Aadhaar_illegal) {
-                    if (op[3].length() != 12) {
-                        Aadhaar_illegal = true;
-                    } else {
-                        int first_4 = Integer.parseInt(op[3].substring(0, 4));
-                        int middle_4 = Integer.parseInt(op[3].substring(4, 8));
-                        int last_3 = Integer.parseInt(op[3].substring(8, 11));
-                        int end = Integer.parseInt(op[3].substring(11));
-                        if (first_4 < 1 || first_4 > 1237 || middle_4 < 20 || middle_4 > 460 || last_3 > 100) {
-                            Aadhaar_illegal = true;
-                        } else if ((end == 0 && !Objects.equals(op[2], "F") ||
-                                end == 1 && !Objects.equals(op[2], "M")) ||
-                                end == 2 && !Objects.equals(op[2], "O")) {
-                            Aadhaar_illegal = true;
-                        }
-                    }
+                int end = Integer.parseInt(op[3].substring(11));
+                if (!Pattern.matches("^(000[1-9]|00[1-9]\\d|0[1-9]\\d{2}|1[0-1]\\d{2}|12[0-2]\\d|123[0-7])(00[2-9]\\d|0[1-3]\\d{2}|04[0-5]\\d|0460)(0\\d{2}|100)([0-2])$", op[3])) {
+                    Aadhaar_illegal = true;
+                } else if ((end == 0 && !Objects.equals(op[2], "F") ||
+                        end == 1 && !Objects.equals(op[2], "M")) ||
+                        end == 2 && !Objects.equals(op[2], "O")) {
+                    Aadhaar_illegal = true;
                 }
                 if (Aadhaar_illegal) {
                     System.out.println("Aadhaar number illegal");
                 } else {
-                    for (String s : alreadyExisted) {
-                        if (Objects.equals(s, op[3])) {
+                    for (User u : alreadyExisted) {
+                        if (Objects.equals(u.Aadhaar, op[3])) {
                             Aadhaar_exists = true;
                             break;
                         }
@@ -131,21 +108,12 @@ class User {
                         this.name = op[1];
                         this.sex = op[2];
                         this.Aadhaar = op[3];
-                        alreadyExisted.add(op[3]);
+                        User user = new User(op[1], op[2], op[3]);
+                        alreadyExisted.add(user);
                         this.toString();
                     }
                 }
             }
         }
     }
-
-    private static boolean isdigit(char c) {
-        return (c >= '0' && c <= '9');
-    }
-
-    private static boolean isalpha(char c) {
-        return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
-    }
-
-
 }
