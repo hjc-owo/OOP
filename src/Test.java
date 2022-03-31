@@ -39,28 +39,28 @@ class User {
         this.Aadhaar = Aadhaar;
     }
 
-    void setName(String name) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    String getName() {
-        return this.name;
+    public String getSex() {
+        return sex;
     }
 
-    void setSex(String sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
-    public String getSex() {
-        return this.sex;
+    public String getAadhaar() {
+        return Aadhaar;
     }
 
-    void setAadhaar(String Aadhaar) {
-        this.Aadhaar = Aadhaar;
-    }
-
-    String getAadhaar() {
-        return this.Aadhaar;
+    public void setAadhaar(String aadhaar) {
+        Aadhaar = aadhaar;
     }
 
     @Override
