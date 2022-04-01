@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97e0cc9b-f9a5-460d-874c-01a7b48fed5d" name="变更" comment="getter setter">
-      <change afterPath="$PROJECT_DIR$/src/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NormalUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SuperAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="97e0cc9b-f9a5-460d-874c-01a7b48fed5d" name="变更" comment="reconstruct &amp; addLine &amp; delLine" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +69,7 @@
       <updated>1648542288663</updated>
       <workItem from="1648542290423" duration="2084000" />
       <workItem from="1648726998692" duration="64000" />
-      <workItem from="1648812285866" duration="7452000" />
+      <workItem from="1648812285866" duration="7777000" />
     </task>
     <task id="LOCAL-00001" summary="正则表达式">
       <created>1648545482382</created>
@@ -93,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648727052391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="reconstruct &amp; addLine &amp; delLine">
+      <created>1648820133019</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648820133019</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +113,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="正则表达式" />
     <MESSAGE value="getter setter" />
-    <option name="LAST_COMMIT_MESSAGE" value="getter setter" />
+    <MESSAGE value="reconstruct &amp; addLine &amp; delLine" />
+    <option name="LAST_COMMIT_MESSAGE" value="reconstruct &amp; addLine &amp; delLine" />
   </component>
 </project>
