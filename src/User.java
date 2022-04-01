@@ -51,9 +51,7 @@ public class User {
         return null;
     }
 
-    void addUser(String argStr) {
-        String[] op = argStr.split(" ");
-
+    void addUser(String[] op) {
         if (op.length != 4) {
             System.out.println("Arguments illegal");
             return;

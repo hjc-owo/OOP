@@ -43,18 +43,32 @@ public class Test {
             String[] op = argStr.split(" ");
             if (Objects.equals(op[0], "addUser")) {
                 User user = new User();
-                user.addUser(argStr);
+                user.addUser(op);
             } else if (Objects.equals(op[0], "addLine")) {
                 if (isSuperAdmins) {
                     SuperAdmin superAdmin = new SuperAdmin();
-                    superAdmin.addLine(argStr);
+                    superAdmin.addLine(op);
                 } else {
                     System.out.println("Command does not exist");
                 }
             } else if (Objects.equals(op[0], "delLine")) {
                 if (isSuperAdmins) {
                     SuperAdmin superAdmin = new SuperAdmin();
-                    superAdmin.delLine(argStr);
+                    superAdmin.delLine(op);
+                } else {
+                    System.out.println("Command does not exist");
+                }
+            } else if (Objects.equals(op[0], "addStation")) {
+                if (isSuperAdmins) {
+                    SuperAdmin superAdmin = new SuperAdmin();
+                    superAdmin.addStation(op);
+                } else {
+                    System.out.println("Command does not exist");
+                }
+            } else if (Objects.equals(op[0], "delStation")) {
+                if (isSuperAdmins) {
+                    SuperAdmin superAdmin = new SuperAdmin();
+                    superAdmin.delStation(op);
                 } else {
                     System.out.println("Command does not exist");
                 }
