@@ -20,14 +20,22 @@
 
 3. 文件路径：
 
-   problem 是 题目
+   - **Lab**
 
-   hjc-owo.pdf 是 实验报告
+     problem 是 题目
 
-   template 文件夹下：
+     hjc-owo.pdf 是 实验报告
 
-   - answer.pdf 是 我写的答案。
-   - solution 文件夹里放的是没有提供代码的题目的代码文件。
+     template 文件夹下：
+
+     - answer.pdf 是 我写的答案。
+     - solution 文件夹里放的是没有提供代码的题目的代码文件。
+
+   - **CTS**
+
+     problem 是 题目
+
+     src 是 代码文件夹
 
 3. 不要问，因为她也有很大可能不知道。
 
