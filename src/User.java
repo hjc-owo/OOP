@@ -46,41 +46,31 @@ public class User {
 
     @Override
     public String toString() {
-        System.out.println("Name:" + this.name);
-        System.out.println("Sex:" + this.sex);
-        System.out.println("Aadhaar:" + this.Aadhaar);
-        return null;
+        return "Name:" + this.name + "\nSex:" + this.sex + "\nAadhaar:" + this.Aadhaar;
     }
 
-    void addUser(String[] op) {
+    String addUser(String[] op) {
         if (op.length != 4) {
-            System.out.println("Arguments illegal");
-            return;
+            return "Arguments illegal";
         }
-        boolean Aadhaar_exists = false;
         if (!Pattern.matches("^[A-Za-z_]+$", op[1])) {
-            System.out.println("Name illegal");
-            return;
+            return "Name illegal";
         }
         if (!Pattern.matches("^[FMO]$", op[2])) {
-            System.out.println("Sex illegal");
-            return;
+            return "Sex illegal";
         }
         int end = Integer.parseInt(op[3].substring(11));
         if (!Pattern.matches("^(000[1-9]|00[1-9]\\d|0[1-9]\\d{2}|1[0-1]\\d{2}|12[0-2]\\d|123[0-7])(00[2-9]\\d|0[1-3]\\d{2}|04[0-5]\\d|0460)(0\\d{2}|100)([0-2])$", op[3])) {
-            System.out.println("Aadhaar number illegal");
-            return;
+            return "Aadhaar number illegal";
         }
         if ((end == 0 && !Objects.equals(op[2], "F") ||
                 end == 1 && !Objects.equals(op[2], "M")) ||
                 end == 2 && !Objects.equals(op[2], "O")) {
-            System.out.println("Aadhaar number illegal");
-            return;
+            return "Aadhaar number illegal";
         }
         for (User u : userAlreadyExisted) {
             if (Objects.equals(u.Aadhaar, op[3])) {
-                System.out.println("Aadhaar number exist");
-                return;
+                return "Aadhaar number exist";
             }
         }
         this.name = op[1];
@@ -88,37 +78,34 @@ public class User {
         this.Aadhaar = op[3];
         User user = new User(op[1], op[2], op[3]);
         userAlreadyExisted.add(user);
-        this.toString();
+        return this.toString();
     }
 
-    void lineInfo(String[] op) {
+    String lineInfo(String[] op) {
         if (op.length != 2) {
-            System.out.println("Arguments illegal");
-            return;
+            return "Arguments illegal";
         }
         for (Line l : Line.lines) {
             if (Objects.equals(l.id, op[1])) {
-                l.toString();
-                return;
+                return l.toString();
             }
         }
-        System.out.println("Line does not exist");
+        return "Line does not exist";
 
     }
 
-    void listLine(String[] op) {
+    String listLine(String[] op) {
         if (op.length != 1) {
-            System.out.println("Arguments illegal");
-            return;
+            return "Arguments illegal";
         }
         Line.lines.sort(Comparator.comparing(l -> l.id));
         if (Line.lines.isEmpty()) {
-            System.out.println("No Lines");
-            return;
+            return "No Lines";
         }
         for (int i = 0; i < Line.lines.size(); i++) {
             System.out.print("[" + i + "]" + " ");
-            Line.lines.get(i).toString();
+            System.out.println(Line.lines.get(i).toString());
         }
+        return null;
     }
 }

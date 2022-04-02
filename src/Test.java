@@ -43,41 +43,28 @@ public class Test {
             String[] op = argStr.split(" ");
             if (Objects.equals(op[0], "addUser")) {
                 User user = new User();
-                user.addUser(op);
+                System.out.println(user.addUser(op));
             } else if (Objects.equals(op[0], "addLine")) {
-                if (isSuperAdmins) {
-                    SuperAdmin superAdmin = new SuperAdmin();
-                    superAdmin.addLine(op);
-                } else {
-                    System.out.println("Command does not exist");
-                }
+                SuperAdmin superAdmin = new SuperAdmin();
+                System.out.println(superAdmin.addLine(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "delLine")) {
-                if (isSuperAdmins) {
-                    SuperAdmin superAdmin = new SuperAdmin();
-                    superAdmin.delLine(op);
-                } else {
-                    System.out.println("Command does not exist");
-                }
+                SuperAdmin superAdmin = new SuperAdmin();
+                System.out.println(superAdmin.delLine(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "addStation")) {
-                if (isSuperAdmins) {
-                    SuperAdmin superAdmin = new SuperAdmin();
-                    superAdmin.addStation(op);
-                } else {
-                    System.out.println("Command does not exist");
-                }
+                SuperAdmin superAdmin = new SuperAdmin();
+                System.out.println(superAdmin.addStation(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "delStation")) {
-                if (isSuperAdmins) {
-                    SuperAdmin superAdmin = new SuperAdmin();
-                    superAdmin.delStation(op);
-                } else {
-                    System.out.println("Command does not exist");
-                }
+                SuperAdmin superAdmin = new SuperAdmin();
+                System.out.println(superAdmin.delStation(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "lineInfo")) {
                 User user = new User();
-                user.lineInfo(op);
+                System.out.println(user.lineInfo(op));
             } else if (Objects.equals(op[0], "listLine")) {
                 User user = new User();
-                user.listLine(op);
+                System.out.println(user.listLine(op));
+            } else if (Objects.equals(op[0], "addTrain")) {
+                SuperAdmin superAdmin = new SuperAdmin();
+                System.out.println(superAdmin.addTrain(op, isSuperAdmins));
             }
         }
     }
