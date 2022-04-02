@@ -102,10 +102,66 @@ public class User {
         if (Line.lines.isEmpty()) {
             return "No Lines";
         }
+        StringBuilder str = new StringBuilder();
         for (int i = 0; i < Line.lines.size(); i++) {
-            System.out.print("[" + i + "]" + " ");
-            System.out.println(Line.lines.get(i).toString());
+            str.append("[").append(i + 1).append("]").append(" ").append(Line.lines.get(i).toString());
+            if (i != Line.lines.size() - 1) {
+                str.append("\n");
+            }
         }
-        return null;
+        return str.toString();
+    }
+
+    String listTrain(String[] op) {
+        if (op.length > 2 || op.length <= 0) {
+            return "Arguments illegal";
+        }
+        if (op.length == 2) {
+            Line line = Line.getLineById(op[1]);
+            if (line == null) {
+                return "Line does not exist";
+            }
+            if (line.trainCount == 0) {
+                return "No Trains";
+            }
+            line.trains.sort(new Train.trainComparator());
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < line.trains.size(); i++) {
+                showTrain(str, i, line.trains.size(), line);
+            }
+            return str.toString();
+        } else {
+            List<Train> allTrains = new ArrayList<>();
+            for (Line l : Line.lines) {
+                allTrains.addAll(l.trains);
+            }
+            if (allTrains.size() == 0) {
+                return "No Trains";
+            }
+            allTrains.sort(new Train.trainComparator());
+            StringBuilder str = new StringBuilder();
+            for (int i = 0; i < allTrains.size(); i++) {
+                Line line = Line.getLineById(allTrains.get(i).lineId);
+                assert line != null;
+                showTrain(str, i, allTrains.size(), line);
+            }
+            return str.toString();
+        }
+    }
+
+    private void showTrain(StringBuilder str, int i, int size, Line line) {
+        String seat = String.valueOf(line.trains.get(i).id.charAt(0));
+        int innerSize = seat.equals("K") ? 2 : 3;
+        str.append("[").append(i + 1).append("]").append(" ")
+                .append(line.trains.get(i).id).append(": ")
+                .append(line.id).append(" ");
+        for (int j = 1; j <= innerSize; j++) {
+            str.append("[").append(Train.seat.get(seat + j)).append("]")
+                    .append(String.format("%.2f", line.trains.get(i).price[j]))
+                    .append(":").append(line.trains.get(i).count[j]).append(" ");
+        }
+        if (i != size - 1) {
+            str.append("\n");
+        }
     }
 }

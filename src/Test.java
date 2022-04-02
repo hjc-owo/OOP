@@ -29,6 +29,7 @@ public class Test {
         Scanner in = new Scanner(System.in);
         String argStr;
         boolean isSuperAdmins = false;
+        Train.init();
 
         while (true) {
             argStr = in.nextLine();
@@ -38,7 +39,6 @@ public class Test {
             } else if (changeIdentity(argStr, isSuperAdmins)) {
                 isSuperAdmins = !isSuperAdmins;
             }
-
 
             String[] op = argStr.split(" ");
             if (Objects.equals(op[0], "addUser")) {
@@ -65,6 +65,15 @@ public class Test {
             } else if (Objects.equals(op[0], "addTrain")) {
                 SuperAdmin superAdmin = new SuperAdmin();
                 System.out.println(superAdmin.addTrain(op, isSuperAdmins));
+            } else if (Objects.equals(op[0], "delTrain")) {
+                SuperAdmin superAdmin = new SuperAdmin();
+                System.out.println(superAdmin.delTrain(op, isSuperAdmins));
+            } else if (Objects.equals(op[0], "checkTicket")) {
+                NormalUser normalUser = new NormalUser();
+                System.out.println(normalUser.checkTicket(op, isSuperAdmins));
+            } else if (Objects.equals(op[0], "listTrain")) {
+                User user = new User();
+                System.out.println(user.listTrain(op));
             }
         }
     }
