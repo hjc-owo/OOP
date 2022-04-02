@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class Line {
     String id;
+    int trainCount = 0;
     int capacity;
     Map<String, Integer> station;
 
@@ -22,6 +23,16 @@ public class Line {
                 return l;
             }
         }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        System.out.print(id + " " + trainCount + "/" + capacity + " ");
+        for (Map.Entry<String, Integer> entry : station.entrySet()) {
+            System.out.print(entry.getKey() + ":" + entry.getValue());
+        }
+        System.out.println();
         return null;
     }
 

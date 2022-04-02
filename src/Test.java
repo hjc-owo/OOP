@@ -72,6 +72,12 @@ public class Test {
                 } else {
                     System.out.println("Command does not exist");
                 }
+            } else if (Objects.equals(op[0], "lineInfo")) {
+                User user = new User();
+                user.lineInfo(op);
+            } else if (Objects.equals(op[0], "listLine")) {
+                User user = new User();
+                user.listLine(op);
             }
         }
     }

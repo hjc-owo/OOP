@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.regex.Pattern;
@@ -88,5 +89,36 @@ public class User {
         User user = new User(op[1], op[2], op[3]);
         userAlreadyExisted.add(user);
         this.toString();
+    }
+
+    void lineInfo(String[] op) {
+        if (op.length != 2) {
+            System.out.println("Arguments illegal");
+            return;
+        }
+        for (Line l : Line.lines) {
+            if (Objects.equals(l.id, op[1])) {
+                l.toString();
+                return;
+            }
+        }
+        System.out.println("Line does not exist");
+
+    }
+
+    void listLine(String[] op) {
+        if (op.length != 1) {
+            System.out.println("Arguments illegal");
+            return;
+        }
+        Line.lines.sort(Comparator.comparing(l -> l.id));
+        if (Line.lines.isEmpty()) {
+            System.out.println("No Lines");
+            return;
+        }
+        for (int i = 0; i < Line.lines.size(); i++) {
+            System.out.print("[" + i + "]" + " ");
+            Line.lines.get(i).toString();
+        }
     }
 }
