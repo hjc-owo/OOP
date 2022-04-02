@@ -80,6 +80,7 @@
       <workItem from="1648825049718" duration="1152000" />
       <workItem from="1648862834365" duration="11952000" />
       <workItem from="1648878700661" duration="13882000" />
+      <workItem from="1648892997108" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="正则表达式">
       <created>1648545482382</created>
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648892828205</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Congratulations, AC!">
+      <created>1648893031886</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648893031886</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="正则表达式" />
     <MESSAGE value="getter setter" />
@@ -157,6 +166,9 @@
     <MESSAGE value="reconstruction" />
     <MESSAGE value="Congratulations, AC!" />
     <option name="LAST_COMMIT_MESSAGE" value="Congratulations, AC!" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
