@@ -5,9 +5,9 @@ import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class User {
-    String name;
-    String sex;
-    String Aadhaar;
+    private String name;
+    private String sex;
+    private String Aadhaar;
 
     public static List<User> userAlreadyExisted = new ArrayList<>();
 
@@ -49,7 +49,7 @@ public class User {
         return "Name:" + this.name + "\nSex:" + this.sex + "\nAadhaar:" + this.Aadhaar;
     }
 
-    String addUser(String[] op) {
+    static String addUser(String[] op) {
         if (op.length != 4) {
             return "Arguments illegal";
         }
@@ -73,15 +73,12 @@ public class User {
                 return "Aadhaar number exist";
             }
         }
-        this.name = op[1];
-        this.sex = op[2];
-        this.Aadhaar = op[3];
         User user = new User(op[1], op[2], op[3]);
         userAlreadyExisted.add(user);
-        return this.toString();
+        return user.toString();
     }
 
-    String lineInfo(String[] op) {
+    static String lineInfo(String[] op) {
         if (op.length != 2) {
             return "Arguments illegal";
         }
@@ -94,7 +91,7 @@ public class User {
 
     }
 
-    String listLine(String[] op) {
+    static String listLine(String[] op) {
         if (op.length != 1) {
             return "Arguments illegal";
         }
@@ -112,7 +109,7 @@ public class User {
         return str.toString();
     }
 
-    String listTrain(String[] op) {
+    static String listTrain(String[] op) {
         if (op.length > 2 || op.length <= 0) {
             return "Arguments illegal";
         }
@@ -149,7 +146,7 @@ public class User {
         }
     }
 
-    private void showTrain(StringBuilder str, int i, int size, Line line) {
+    private static void showTrain(StringBuilder str, int i, int size, Line line) {
         String seat = String.valueOf(line.trains.get(i).id.charAt(0));
         int innerSize = seat.equals("K") ? 2 : 3;
         str.append("[").append(i + 1).append("]").append(" ")

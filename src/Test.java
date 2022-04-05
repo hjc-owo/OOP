@@ -42,38 +42,27 @@ public class Test {
 
             String[] op = argStr.split(" ");
             if (Objects.equals(op[0], "addUser")) {
-                User user = new User();
-                System.out.println(user.addUser(op));
+                System.out.println(User.addUser(op));
             } else if (Objects.equals(op[0], "addLine")) {
-                SuperAdmin superAdmin = new SuperAdmin();
-                System.out.println(superAdmin.addLine(op, isSuperAdmins));
+                System.out.println(SuperAdmin.addLine(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "delLine")) {
-                SuperAdmin superAdmin = new SuperAdmin();
-                System.out.println(superAdmin.delLine(op, isSuperAdmins));
+                System.out.println(SuperAdmin.delLine(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "addStation")) {
-                SuperAdmin superAdmin = new SuperAdmin();
-                System.out.println(superAdmin.addStation(op, isSuperAdmins));
+                System.out.println(SuperAdmin.addStation(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "delStation")) {
-                SuperAdmin superAdmin = new SuperAdmin();
-                System.out.println(superAdmin.delStation(op, isSuperAdmins));
+                System.out.println(SuperAdmin.delStation(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "lineInfo")) {
-                User user = new User();
-                System.out.println(user.lineInfo(op));
+                System.out.println(User.lineInfo(op));
             } else if (Objects.equals(op[0], "listLine")) {
-                User user = new User();
-                System.out.println(user.listLine(op));
+                System.out.println(User.listLine(op));
             } else if (Objects.equals(op[0], "addTrain")) {
-                SuperAdmin superAdmin = new SuperAdmin();
-                System.out.println(superAdmin.addTrain(op, isSuperAdmins));
+                System.out.println(SuperAdmin.addTrain(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "delTrain")) {
-                SuperAdmin superAdmin = new SuperAdmin();
-                System.out.println(superAdmin.delTrain(op, isSuperAdmins));
+                System.out.println(SuperAdmin.delTrain(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "checkTicket")) {
-                NormalUser normalUser = new NormalUser();
-                System.out.println(normalUser.checkTicket(op, isSuperAdmins));
+                System.out.println(NormalUser.checkTicket(op, isSuperAdmins));
             } else if (Objects.equals(op[0], "listTrain")) {
-                User user = new User();
-                System.out.println(user.listTrain(op));
+                System.out.println(User.listTrain(op));
             }
         }
     }

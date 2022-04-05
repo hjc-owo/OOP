@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class SuperAdmin extends User {
 
-    String addLine(String[] op, boolean isSuperAdmins) {
+    static String addLine(String[] op, boolean isSuperAdmins) {
         if (!isSuperAdmins) {
             return "Command does not exist";
         }
@@ -42,7 +42,7 @@ public class SuperAdmin extends User {
         return "Add Line success";
     }
 
-    String delLine(String[] op, boolean isSuperAdmins) {
+    static String delLine(String[] op, boolean isSuperAdmins) {
         if (!isSuperAdmins) {
             return "Command does not exist";
         }
@@ -60,7 +60,7 @@ public class SuperAdmin extends User {
         return "Del Line success";
     }
 
-    String addStation(String[] op, boolean isSuperAdmins) {
+    static String addStation(String[] op, boolean isSuperAdmins) {
         if (!isSuperAdmins) {
             return "Command does not exist";
         }
@@ -83,7 +83,7 @@ public class SuperAdmin extends User {
 
     }
 
-    String delStation(String[] op, boolean isSuperAdmins) {
+    static String delStation(String[] op, boolean isSuperAdmins) {
         if (!isSuperAdmins) {
             return "Command does not exist";
         }
@@ -103,7 +103,7 @@ public class SuperAdmin extends User {
 
     }
 
-    String addTrain(String[] op, boolean isSuperAdmins) {
+    static String addTrain(String[] op, boolean isSuperAdmins) {
         if (!isSuperAdmins) {
             return "Command does not exist";
         }
@@ -162,7 +162,7 @@ public class SuperAdmin extends User {
         return "Add Train Success";
     }
 
-    String delTrain(String[] op, boolean isSuperAdmins) {
+    static String delTrain(String[] op, boolean isSuperAdmins) {
         if (!isSuperAdmins) {
             return "Command does not exist";
         }

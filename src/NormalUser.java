@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class NormalUser extends User {
 
-    public int match(String trainId, String kind) {
+    public static int match(String trainId, String kind) {
         if (trainId.charAt(0) == 'G') {
             if (Objects.equals(kind, "SC")) {
                 return 1;
@@ -38,7 +38,7 @@ public class NormalUser extends User {
         return 0;
     }
 
-    public String checkTicket(String[] op, boolean isSuperAdmins) {
+    public static String checkTicket(String[] op, boolean isSuperAdmins) {
         if (isSuperAdmins) {
             return "Command does not exist";
         }
