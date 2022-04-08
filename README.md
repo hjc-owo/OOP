@@ -24,7 +24,7 @@
 
      problem 是 题目
 
-     hjc-owo.pdf 是 实验报告
+     Labx_hjc-owo.pdf 是 Labx 的实验报告
 
      template 文件夹下：
 
