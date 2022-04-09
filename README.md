@@ -28,7 +28,7 @@
 
      template 文件夹下：
 
-     - answer.pdf 是 我写的答案。
+     - answer.md 是 我写的答案。
      - solution 文件夹里放的是没有提供代码的题目的代码文件。
 
    - **CTS**
