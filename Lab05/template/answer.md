@@ -1,9 +1,9 @@
 # Lab 05 Assignment
 
 > 班级：hjc-owo
-> 
+>
 > 学号：hjc-owo
-> 
+>
 > 姓名：hjc-owo
 
 ## 实验题目
@@ -59,13 +59,13 @@
   >
   > 所以一开始先进入了 `A()` 中并输出了`A() before draw()`。
   >
-  > 在执行`draw()`的时候，因为B中对该方法进行了重写，所以调用的是B类中的`draw()`。
+  > 在执行`draw()`的时候，因为 B 中对该方法进行了重写，所以调用的是 B 类中的`draw()`。
   >
-  > B的无参构造`draw()`的`b`的值还没有初始化，所以是0。
+  > B 的无参构造`draw()`的`b`的值还没有初始化，所以是 0。
   >
-  > 然后完成A的装载。
+  > 然后完成 A 的装载。
   >
-  > 最后才执行B的有参构造函数。
+  > 最后才执行 B 的有参构造函数。
 
 ### Question05 ShapeFactory 1 `编程题`
 
@@ -91,7 +91,7 @@
 
 ### Extra 1 策略模式（Strategy Pattern） `编程题`
 
-![截屏2022-04-08 23.48.25](https://cdn.jsdelivr.net/gh/hjc-owo/allImgs/img/202204172139659.png)
+![截屏2022-04-08 23.48.25](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io/img/202204172139659.png)
 
 ### Extra 2 真·工厂方法模式 `编程题`
 
@@ -103,4 +103,4 @@
 
 ### Extra 4 命令模式 `编程题`
 
-![截屏2022-04-09 01.07.51](https://cdn.jsdelivr.net/gh/hjc-owo/allImgs/img/202204172137474.png)
+![截屏2022-04-09 01.07.51](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io/img/202204172137474.png)
