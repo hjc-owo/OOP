@@ -1,4 +1,3 @@
-```java
 TunakTunakTun
 addLine Line13 4 Dazhongshi 28 Zhichunlu 30 Wudaokou 48 Shangdi 96 Xierqi 121 Longze 148
 addLine Manchu 2 Shahe 20 Hamazhen 59 Wulongbei 150 Tangshancheng 207 Gaolimen 281 Fenghuangcheng 272 Sitaizi 430 Jiguanshan 498 Benxihu 586
@@ -16,25 +15,9 @@ logout
 importCert cert2.csv
 login 041401700330 xiaoyangren
 buyTicket G1001 Shahe Gaolimen SB 50
-listOrder 
-cancellOrder G1001 Shahe Gaolimen SB 49
+listOrder
+cancelOrder G1001 Shahe Gaolimen SB 49
 listTrain Manchu
 listOrder
 logout
-login 016103550800 xiaoxuesheng
-buyTicket G1001 Shahe Gaolimen SB 1
-buyTicket G1001 Shahe Gaolimen SB 3
-payOrder 
-checkBalance
-rechargeBalance 5000
-payOrder
-checkBalance
-listOrder
-logout
-login 054502770201 xiaoyinren
-buyTicket G1001 Shahe Gaolimen SB 12
-listOrder
-logout
 QUIT
-```
-
