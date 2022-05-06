@@ -1,3 +1,4 @@
+```java
 TunakTunakTun
 addLine Line13 4 Dazhongshi 28 Zhichunlu 30 Wudaokou 48 Shangdi 96 Xierqi 121 Longze 148
 addLine Manchu 2 Shahe 20 Hamazhen 59 Wulongbei 150 Tangshancheng 207 Gaolimen 281 Fenghuangcheng 272 Sitaizi 430 Jiguanshan 498 Benxihu 586
@@ -8,3 +9,4 @@ addUser xiaoyangren F 041401700330
 addUser xiaoyinren M 054502770201
 addUser xiaoxuesheng F 016103550800 2
 QUIT
+```
