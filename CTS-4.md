@@ -1,10 +1,10 @@
-# CTS-4 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#cts-4)
+# CTS-4
 
-## 概览 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#概览)
+## 概览
 
 考察内容：继承、方法重写、文件I/O等
 
-本次CTS-4你需要实现的全部新功能（命令）如下表所示，详细要求请见下文。
+ 本次CTS-4你需要实现的全部新功能（命令）如下表所示，详细要求请见下文。
 
 > 虽然功能看起来不少，但是大部分是在原有基础上修改，新增功能逻辑比较简单。加油，CTS就要结束咧！
 
@@ -19,9 +19,9 @@
 | 【新增】payOrder        | 无        | 无     | 无     | 无           | 无    | 支付全部未付款订单               |
 | 【修改】listOrder       | 无        | 无     | 无     | 无           | 无    | 查询已购买的车票listOrder        |
 
-### 以下功能在原来基础上修改 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#以下功能在原来基础上修改)
+### 以下功能在原来基础上修改
 
-- #### 学生票功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#学生票功能)
+- #### 学生票功能
 
   每位学生有多次以0.5折购买学生票的机会，并在下单时自动抵扣。
 
@@ -62,7 +62,7 @@
     [[列车车次]: [出发站]->[目的站]] seat:[席别代号] num:[张数] price:[总价(保留两位小数)] paid:[结算状态(T/F)]
     ```
 
-- #### 购票功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#购票功能)
+- #### 购票功能
 
   - 修改CTS-3中的购票命令
 
@@ -86,9 +86,9 @@
     - 张数不为正整数，输出`Ticket number illegal`
     - 张数大于该车次该席位的剩余票数，输出`Ticket does not enough`
 
-### 添加以下新功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#添加以下新功能)
+### 添加以下新功能
 
-- #### 电子钱包功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#电子钱包功能)
+- #### 电子钱包功能
 
   - 在现有功能基础上添加电子钱包功能，请根据实际自行选择合适的实现方式
 
@@ -106,11 +106,13 @@
 
     - 输出
       - 充值成功输出`Recharge Success`
+
     - 异常处理
       - 命令不存在，输出`Command does not exist`
       - 参数数量不正确，输出`Arguments illegal`
       - 当前无用户登录，输出`Please login first`
       - 充值金额保证为数字类型，若为负数，输出`Arguments illegal`
+
     - 查询余额
 
     | 命令         | 功能描述 |
@@ -133,7 +135,7 @@
       - 参数数量不正确，输出`Arguments illegal`
       - 当前无用户登录，输出`Please login first`
 
-- #### 核酸检测功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#核酸检测功能)
+- #### 核酸检测功能
 
   - 购买车票坐席为[1A, 2A]时需要保证系统中最新的核酸检测证明为阴性，若证明为阳性或不存在则无法购票
 
@@ -177,7 +179,7 @@
       [-] Import Success, Positive:1 Negative:1
       ```
 
-- #### 退票功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#退票功能)
+- #### 退票功能
 
   用户购买车票后可进行退票，实现以下命令：
 
@@ -251,13 +253,13 @@
     - 未找到匹配的购票信息，输出`No such Record`
     - 退票张数大于已购张数，输出`No enough orders`
 
-- #### 结算功能 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#结算功能)
+- #### 结算功能
 
   - 新增结算**全部**订单命令，从电子钱包中扣除余额并修改订单结算状态。一旦扣除后，无法再进行取消订单操作。
 
   - 学生票优惠从最近一笔订单开始抵扣，直到资格耗尽为止，耗尽后其余车票按正常价格计算。购票成功后扣除相应的优惠次数
 
-    > 例如：正常票价500，分两次购买，每次购买3张，共有4张优惠资格，则总应付价格为（500*4）*0.05+500*2=1100
+    > 例如：正常票价500，分两次购买，每次购买3张，共有4张优惠资格，则总应付价格为（500\*4）\*0.05+500\*2=1100
 
   - 订单是结算的最小单位，即只能按照整笔订单进行结算，订单的结算状态只有T和F。
 
@@ -281,11 +283,11 @@
 
   - 说明：在订单的添加、取消和支付部分，我们采用了【栈】的设计思想。可以依此来设计相关的数据结构（仅作参考，不考察具体实现方式）
 
-## 其他 [#](https://super-buaa-2021.github.io/Java-HomeWork/docs/CTS/CTS-4/#其他)
+## 其他
 
 cert.csv文件下载地址:
 
-[https://bhpan.buaa.edu.cn:443/link/AED2B7D2568D3AAE55D84895D487EA95](https://bhpan.buaa.edu.cn/link/AED2B7D2568D3AAE55D84895D487EA95) 有效期限：2022-06-02 23:59
+https://bhpan.buaa.edu.cn:443/link/AED2B7D2568D3AAE55D84895D487EA95 有效期限：2022-06-02 23:59
 
 评测时，请将CSV文件放到patpat可执行文件相同路径下。例如：
 
@@ -318,14 +320,14 @@ CTS\example
 >
 > ```
 > public static HashMap<String, Boolean> read(String fileName) throws IOException {
->   HashMap<String, Boolean> cert = new HashMap<>();
->   BufferedReader br = new BufferedReader(new FileReader(fileName));
->   String line;
->   while ((line = br.readLine()) != null) {
->       String[] lines = line.split(",");
->       cert.put(lines[0], lines[1].equals("P"));
->   }
->   br.close();
->   return cert;
+> HashMap<String, Boolean> cert = new HashMap<>();
+> BufferedReader br = new BufferedReader(new FileReader(fileName));
+> String line;
+> while ((line = br.readLine()) != null) {
+>    String[] lines = line.split(",");
+>    cert.put(lines[0], lines[1].equals("P"));
+> }
+> br.close();
+> return cert;
 > }
 > ```
