@@ -1,3 +1,4 @@
+```java
 TunakTunakTun
 TunakTunakTun
 addLine
@@ -66,3 +67,4 @@ listTrain Beihei
 listLine
 listTrain Line19
 QUIT
+```

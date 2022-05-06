@@ -1,3 +1,4 @@
+```java
 TunakTunakTun
 TunakTunakTun
 addLine
@@ -18,3 +19,4 @@ delLine Line13
 lineInfo Line13
 delLine Line13
 QUIT
+```

@@ -1,3 +1,4 @@
+```java
 TunakTunakTun
 TunakTunakTun
 addLine
@@ -28,3 +29,4 @@ delStation Line19 Tsinghua
 lineInfo Line13
 lineInfo Line19
 QUIT
+```

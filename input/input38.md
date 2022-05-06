@@ -1,3 +1,4 @@
+```java
 TunakTunakTun
 TunakTunakTun
 addLine
@@ -36,3 +37,4 @@ addTrain G1151 Line13 22 90 7 120 2.4 200
 addTrain G1151 Line19 22 90 7 120 2.4 200
 addTrain G1151 Beihei 22 90 7 120 2.4 200
 QUIT
+```
