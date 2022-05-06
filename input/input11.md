@@ -1,3 +1,4 @@
+```java
 addUser
 addUser LaoWang
 addUser LaoWang M
@@ -9,3 +10,4 @@ addUser Lao_Wang M 123801221011
 addUser Lao&Wang M 003005001010
 addUser LaoWang M 999999999999
 QUIT
+```
