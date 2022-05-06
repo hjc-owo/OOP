@@ -1,3 +1,4 @@
+```java
 TunakTunakTun
 addLine Line13 4 Dazhongshi 28 Zhichunlu 30 Wudaokou 48 Shangdi 96 Xierqi 121 Longze 148
 addLine Manchu 2 Shahe 20 Hamazhen 59 Wulongbei 150 Tangshancheng 207 Gaolimen 281 Fenghuangcheng 272 Sitaizi 430 Jiguanshan 498 Benxihu 586
@@ -17,3 +18,4 @@ buyTicket K0012 Dazhongshi Zhichunlu 1A 10000
 buyTicket K0012 Dazhongshi Zhichunlu 1A 50
 buyTicket K0012 Dazhongshi Zhichunlu 1A 50
 QUIT
+```
