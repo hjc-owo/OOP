@@ -6,7 +6,6 @@ public class Student extends User {
         this.setSex(sex);
         this.setAadhaar(Aadhaar);
         this.setDiscount(discount);
-        this.setCert(0);
         this.setBalance(0);
     }
 

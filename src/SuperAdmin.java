@@ -204,20 +204,14 @@ public class SuperAdmin extends User {
             while ((tempString = reader.readLine()) != null) {
                 // 以逗号分隔每一行数据
                 String[] data = tempString.split(",");
-                User user = User.getUserByAadhaar(data[0]);
-                int cert = Objects.equals(data[1], "P") ? 1 : 2;
-                Cert.certs.add(new Cert(data[0], cert));
-                if (user != null) {
-                    user.setCert(cert);
-                }
+                Cert.certs.put(data[0], data[1]);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         int positive = 0, negative = 0;
-        for (Cert cert : Cert.certs) {
-            if (cert.cert == 1) {
+        for (String cert : Cert.certs.values()) {
+            if (Objects.equals(cert, "P")) {
                 positive++;
             } else {
                 negative++;

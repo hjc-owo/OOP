@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -47,21 +49,23 @@ public class Test {
             "rechargeBalance",
             "checkBalance",
             "importCert",
-            "cancellOrder",
+            "cancelOrder",
             "payOrder"
     ));
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(System.in);
         String argStr;
-        StringBuilder input = new StringBuilder();
+        StringBuilder input = new StringBuilder("```java\n");
+        int inputLine = 0;
         boolean isSuperAdmins = false;
         Train.init();
 
         while (true) {
             argStr = in.nextLine();
-            input.append(argStr).append(" ");
+            inputLine++;
+            input.append(argStr).append("\n");
             String[] op = argStr.split(" ");
             if (!commands.contains(op[0])) {
                 System.out.println("Command does not exist");
@@ -69,7 +73,10 @@ public class Test {
             }
 
             if (Objects.equals(argStr, "QUIT")) {
-                // System.out.println(input);
+                input.append("```");
+                try (FileWriter outFile = new FileWriter("./input" + inputLine + ".md");) {
+                    outFile.write(input.toString());
+                }
                 System.out.println("----- Good Bye! -----");
                 System.exit(0);
             } else if (changeIdentity(argStr, isSuperAdmins)) {
@@ -112,8 +119,8 @@ public class Test {
                 System.out.println(User.checkBalance(op));
             } else if (Objects.equals(op[0], "importCert")) {
                 System.out.println(SuperAdmin.importCert(op, isSuperAdmins));
-            } else if (Objects.equals(op[0], "cancellOrder")) {
-                System.out.println(User.cancellOrder(op));
+            } else if (Objects.equals(op[0], "cancelOrder")) {
+                System.out.println(User.cancelOrder(op));
             } else if (Objects.equals(op[0], "payOrder")) {
                 System.out.println(User.payOrder(op));
             }

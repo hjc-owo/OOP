@@ -1,14 +1,10 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Cert {
     String Aadhaar;
-    int cert;
+    String cert;
 
-    static List<Cert> certs = new ArrayList<>();
+    static Map<String, String> certs = new HashMap<>();
 
-    public Cert(String Aadhaar, int cert) {
-        this.Aadhaar = Aadhaar;
-        this.cert = cert;
-    }
 }

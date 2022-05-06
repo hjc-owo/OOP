@@ -7,7 +7,6 @@ public class Ticket {
     private final String endStation;
     private final String seat;
     private int number;
-    private double price;
     private final double unitPrice;
     private String isPaid;
     private int numberOfStudent;
@@ -52,14 +51,6 @@ public class Ticket {
         this.number = number;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getIsPaid() {
         return isPaid;
     }
@@ -69,7 +60,7 @@ public class Ticket {
     }
 
     public Ticket(Train train, Line line, String startStation, String endStation, String seat,
-                  int number, double unitPrice, double price, int numberOfStudent) {
+                  int number, double unitPrice, int numberOfStudent) {
         this.train = train;
         this.line = line;
         this.startStation = startStation;
@@ -77,7 +68,6 @@ public class Ticket {
         this.seat = seat;
         this.number = number;
         this.unitPrice = unitPrice;
-        this.price = price;
         this.isPaid = "F";
         this.numberOfStudent = numberOfStudent;
     }

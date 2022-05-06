@@ -5,13 +5,11 @@ import java.util.Objects;
 import java.util.regex.Pattern;
 
 import static java.lang.Math.max;
-import static java.lang.Math.min;
 
 public class User {
     private String name;
     private String sex;
     private String Aadhaar;
-    private int cert;
 
     private double balance;
 
@@ -26,7 +24,6 @@ public class User {
         this.name = name;
         this.sex = sex;
         this.Aadhaar = Aadhaar;
-        this.cert = 0;
         this.balance = 0;
     }
 
@@ -52,14 +49,6 @@ public class User {
 
     public void setAadhaar(String aadhaar) {
         Aadhaar = aadhaar;
-    }
-
-    public int getCert() {
-        return cert;
-    }
-
-    public void setCert(int cert) {
-        this.cert = cert;
     }
 
     public double getBalance() {
@@ -296,7 +285,7 @@ public class User {
         if (kind == 0) {
             return "Seat does not match";
         }
-        if (loginUser.cert != 2 && (Objects.equals(op[4], "1A") || Objects.equals(op[4], "2A"))) {
+        if (!Objects.equals(Cert.certs.get(loginUser.Aadhaar), "N") && (Objects.equals(op[4], "1A") || Objects.equals(op[4], "2A"))) {
             return "Cert illegal";
         }
         if (Integer.parseInt(op[5]) <= 0) {
@@ -310,13 +299,7 @@ public class User {
         // 判断loginUser是否是Student类型
         int usedStu = 0;
         double unitPrice = train.price[kind] * (line.stations.get(op[3]) - line.stations.get(op[2]));
-        if (loginUser instanceof Student) {
-            int stuNumber = ((Student) loginUser).getDiscount();
-            ((Student) loginUser).setDiscount(max(stuNumber - number, 0));
-            usedStu = min(number, stuNumber);
-        }
-        Ticket ticket = new Ticket(train, line, op[2], op[3], op[4], number, unitPrice,
-                unitPrice * (number - usedStu) + unitPrice * usedStu * 0.05, usedStu);
+        Ticket ticket = new Ticket(train, line, op[2], op[3], op[4], number, unitPrice, usedStu);
         // 将车票加入用户的车票列表首位
         loginUser.tickets.add(0, ticket);
         return "Thanks for your order";
@@ -366,7 +349,7 @@ public class User {
         return "UserName:" + loginUser.name + "\nBalance:" + String.format("%.2f", loginUser.balance);
     }
 
-    static String cancellOrder(String[] op) {
+    static String cancelOrder(String[] op) {
         if (op.length != 6) {
             return "Arguments illegal";
         }
@@ -377,12 +360,14 @@ public class User {
         if (train == null || !Train.trains.contains(train)) {
             return "No such Record";
         }
-        Ticket ticket = Ticket.getTicketByTrainAndStation(loginUser.tickets, train, op[2], op[3]);
-        if (ticket == null) {
-            return "No such Record";
+        int ticketNumber = 0;
+        for (Ticket ticket : loginUser.tickets) {
+            if (ticket.getTrain().id.equals(op[1]) && ticket.getStartStation().equals(op[2]) && ticket.getEndStation().equals(op[3]) && ticket.getSeat().equals(op[4])) {
+                ticketNumber += ticket.getNumber();
+            }
         }
         int number = Integer.parseInt(op[5]);
-        if (ticket.getNumber() < number) {
+        if (ticketNumber < number) {
             return "No enough orders";
         }
         int kind = match(op[1], op[4]);
@@ -390,19 +375,19 @@ public class User {
             return "Seat does not match";
         }
         train.count[kind] += number;
-        int oldNumber = ticket.getNumber();
-        int newNumber = oldNumber - number;
-        int oldNumberOfStudent = ticket.getNumberOfStudent();
-        int oldNumberOfNotStudent = oldNumber - oldNumberOfStudent;
-        int newNumberOfNotStudent = max(oldNumberOfNotStudent - number, 0);
-        int newNumberOfStudent = newNumber - newNumberOfNotStudent;
-        ticket.setNumber(newNumber);
-        ticket.setNumberOfStudent(newNumberOfStudent);
-        ticket.setPrice(ticket.getUnitPrice() * (newNumber - newNumberOfStudent) + ticket.getUnitPrice() * newNumberOfStudent * 0.05);
-        if (ticket.getNumber() == 0) {
-            loginUser.tickets.remove(ticket);
+        for (Ticket ticket : loginUser.tickets) {
+            if (number <= 0) {
+                break;
+            }
+            if (ticket.getTrain().id.equals(op[1]) && ticket.getStartStation().equals(op[2]) && ticket.getEndStation().equals(op[3]) && ticket.getSeat().equals(op[4])) {
+                ticket.setNumber(max(0, ticket.getNumber() - number));
+                number -= ticket.getNumber();
+                if (ticket.getNumber() == 0) {
+                    loginUser.tickets.remove(ticket);
+                }
+            }
         }
-        return "Cancell success";
+        return "Cancel success";
     }
 
     static String payOrder(String[] op) {
@@ -413,9 +398,14 @@ public class User {
             return "Please login first";
         }
         double total = 0;
+        int discount = 0;
+        if (loginUser instanceof Student) {
+            discount = ((Student) loginUser).getDiscount();
+        }
         for (Ticket ticket : loginUser.tickets) {
             if (Objects.equals(ticket.getIsPaid(), "F")) {
-                total += ticket.getPrice();
+                total += ticket.getUnitPrice() * (ticket.getNumber() - discount) + ticket.getUnitPrice() * discount * 0.05;
+                discount = max(0, discount - ticket.getNumber());
             }
         }
         double eps = 1e-6;
@@ -424,6 +414,9 @@ public class User {
         }
         if (total > loginUser.balance) {
             return "Balance does not enough";
+        }
+        if (loginUser instanceof Student) {
+            ((Student) loginUser).setDiscount(discount);
         }
         for (Ticket ticket : loginUser.tickets) {
             if (Objects.equals(ticket.getIsPaid(), "F")) {
