@@ -1,11 +1,5 @@
 # Lab 01 Assignment
 
-> 班级：hjc-owo
-> 
-> 学号：hjc-owo
-> 
-> 姓名：hjc-owo
-
 ## Question01
 
 （a）上述源文件的名字是什么？ 
@@ -36,15 +30,15 @@
 
 ## Question02
 
-![截屏2022-03-12 13.13.59](https://s2.loli.net/2022/04/09/8ypHVokniXlPcvb.png)
+![截屏2022-03-12 13.13.59](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140125446.png)
 
 ## Question03
 
-![截屏2022-03-12 13.16.16](https://s2.loli.net/2022/04/09/JxP4QMaluszeIjE.png)
+![截屏2022-03-12 13.16.16](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140125178.png)
 
 ## Question04
 
-![截屏2022-03-12 13.17.55](https://s2.loli.net/2022/04/09/5zhprwRqvEVxc8C.png)
+![截屏2022-03-12 13.17.55](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140125548.png)
 
 ## Question05
 
@@ -52,11 +46,11 @@
 
 ## Question06
 
-![截屏2022-03-12 13.35.29](https://s2.loli.net/2022/04/09/JnFRX2fHbauk7xS.png)
+![截屏2022-03-12 13.35.29](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140126719.png)
 
 ## Question07
 
-![截屏2022-03-13 22.10.34](https://s2.loli.net/2022/04/09/rwqThH8j3g7PfZl.png)
+![截屏2022-03-13 22.10.34](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140127641.png)
 
 ## Question08
 
@@ -64,7 +58,7 @@
 
 ## Question09
 
-![截屏2022-03-12 14.25.32](https://s2.loli.net/2022/04/09/OUpubkqt2VMXrxY.png)
+![截屏2022-03-12 14.25.32](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140127628.png)
 
 ## Question10
 
@@ -72,17 +66,17 @@
 
 ## Question13
 
-![截屏2022-03-12 15.12.17](https://s2.loli.net/2022/04/09/x2EWrVgn84pGfmQ.png)
+![截屏2022-03-12 15.12.17](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128923.png)
 
 ## Question 11
 
-![截屏2022-03-12 15.13.39](https://s2.loli.net/2022/04/09/eQwDb9Ca6qWFUxt.png)
+![截屏2022-03-12 15.13.39](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128011.png)
 
 ## Question12
 
 如图所示:
 
-![截屏2022-03-12 15.16.59](https://s2.loli.net/2022/04/09/L658A7dhxwK29ep.png)
+![截屏2022-03-12 15.16.59](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128955.png)
 
 - **浅拷贝**(同一个引用):被复制对象的所有变量都含有与原来的对象相同的值，而所有的对其他对象的引用仍然指向原来的对象。换言之，浅复制仅仅复制所考虑的对象，而不复制它所引用的对象。
 
@@ -90,15 +84,15 @@
 
 ## Question13
 
-![截屏2022-03-12 15.18.32](https://s2.loli.net/2022/04/09/D7R8xp3elWPBsFS.png)
+![截屏2022-03-12 15.18.32](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128374.png)
 
 ## Question14
 
-![截屏2022-03-12 15.19.54](https://s2.loli.net/2022/04/09/CXlGfZHsU96pjoM.png)
+![截屏2022-03-12 15.19.54](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140129083.png)
 
 ## Question15
 
-![截屏2022-03-12 15.30.13](https://s2.loli.net/2022/04/09/qz7elA3EZTdCY2o.png)
+![截屏2022-03-12 15.30.13](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140129504.png)
 
 调用`strscat(new String[]{"a", "b"})`能通过编译吗？
 
@@ -114,11 +108,11 @@
 
 ## Question16
 
-![截屏2022-03-12 16.13.52](https://s2.loli.net/2022/04/09/h4tZr7dLi2PYn1o.png)
+![截屏2022-03-12 16.13.52](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140130753.png)
 
 ## Question17
 
-![截屏2022-03-12 16.13.44](https://s2.loli.net/2022/04/09/YD7fz1uOl2IPpgh.png)
+![截屏2022-03-12 16.13.44](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140129473.png)
 
 
 

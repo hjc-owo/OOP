@@ -1,11 +1,5 @@
 # Lab 05 Assignment
 
-> 班级：hjc-owo
->
-> 学号：hjc-owo
->
-> 姓名：hjc-owo
-
 ## 实验题目
 
 ### Question01 多态 1 `输出/简答题`

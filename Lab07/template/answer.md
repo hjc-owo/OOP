@@ -1,11 +1,5 @@
 # Lab 07 Assignment
 
-> 班级：202111
->
-> 学号：19241027
->
-> 姓名：胡峻诚
-
 ## Question1 简述`ArrayList`和`LinkedList`的区别 `简答`
 
 > 类似于 C 语言的数组和链表。

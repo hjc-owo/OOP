@@ -1,11 +1,5 @@
 # Lab 04 Assignment
 
-> 班级：hjc-owo
-> 
-> 学号：hjc-owo
-> 
-> 姓名：hjc-owo
-
 ## Question1. Package
 
 在 A.java 添加：
@@ -68,7 +62,7 @@ import com.oo.bb.B;
 
 1. 运行结果：
 
-   <img src="https://s2.loli.net/2022/04/09/MarNows7SmVqAX9.png" alt="截屏2022-04-01 17.24.16" style="zoom:50%;" />
+   ![截屏2022-04-01 17.24.16](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140120961.png)
 
 2. 不能，子类重写父类的方法不能降低权限。
 
@@ -82,7 +76,7 @@ import com.oo.bb.B;
 
 ## Question4. shape
 
-<img src="https://s2.loli.net/2022/04/09/tzD7wC1pg8sEZFn.png" alt="截屏2022-04-03 20.54.57" style="zoom:50%;" />
+![截屏2022-04-03 20.54.57](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140121292.png)
 
 **题外话：**
 

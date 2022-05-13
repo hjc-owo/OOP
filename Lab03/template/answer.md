@@ -1,11 +1,5 @@
 # Lab 03 Assignment
 
-> 班级：hjc-owo
-> 
-> 学号：hjc-owo
-> 
-> 姓名：hjc-owo
-
 ## Question1
 
 输出如下：

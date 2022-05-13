@@ -1,11 +1,5 @@
 # Lab 06 Assignment
 
-> 班级：202111
-> 
-> 学号：19241027
-> 
-> 姓名：胡峻诚
-
 ## Question01 InnerClass1 `代码填空`
 
 ```java

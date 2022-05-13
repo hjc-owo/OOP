@@ -1,13 +1,5 @@
 # Lab 02 Assignment
 
-> 班级：hjc-owo
-> 
-> 学号：hjc-owo
-> 
-> 姓名：hjc-owo
-
-
-
 ### Question1: 简答题
 
 标记的第4行编译会导致编译错误：原因`java: 可能尚未初始化变量m`
@@ -27,7 +19,7 @@
 (a,b,c)=(2,3,4)
 ```
 
-![截屏2022-03-18 20.52.54](https://s2.loli.net/2022/04/09/KOz3dTLi82BuFjR.png)
+![截屏2022-03-18 20.52.54](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140122563.png)
 
 
 
@@ -63,7 +55,7 @@
 文件名有：TestPerson.java
 ```
 
-![截屏2022-03-18 21.47.00](https://s2.loli.net/2022/04/09/aCOLEmfHAxJPuYr.png)
+![截屏2022-03-18 21.47.00](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140123653.png)
 
 ### Question7: 编程题
 

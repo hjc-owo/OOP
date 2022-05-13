@@ -1,11 +1,5 @@
 # Lab 08 Assignment
 
-> 班级：202111
-> 
-> 学号：19241027
-> 
-> 姓名：胡峻诚
-
 ## Question1 Java中的检查型异常 `(checked exception)` 和非检查型异常 `(unchecked exception)` 有什么区别？ `简答`
 
 - 检查型异常继承自 Exception，必须对其采用 `try...catch` 处理或者 `throws` 这个异常，接受 `throws` 的上级方法也必须对其处理，否则都不能通过编译。
