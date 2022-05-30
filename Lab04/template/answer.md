@@ -62,7 +62,7 @@ import com.oo.bb.B;
 
 1. 运行结果：
 
-   ![截屏2022-04-01 17.24.16](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140120961.png)
+   ![截屏2022-04-01 17.24.16](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140120961.png)
 
 2. 不能，子类重写父类的方法不能降低权限。
 
@@ -70,19 +70,19 @@ import com.oo.bb.B;
 
 4. 不一致，静态方法会被隐藏，非静态方法会被重写，因此`f2.bar()`调用父类函数，`f2.foo()`便调用子类函数。
 
-2. 只有非静态且非私有的方法可以重写，其余的均是隐藏。
+5. 只有非静态且非私有的方法可以重写，其余的均是隐藏。
 
 <div STYLE="page-break-after: always;"></div>
 
 ## Question4. shape
 
-![截屏2022-04-03 20.54.57](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140121292.png)
+![截屏2022-04-03 20.54.57](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140121292.png)
 
 **题外话：**
 
 我们知道属性不设置为 public 是为了保护数据，如果 a 和 b 在 Shape 中的访问权限被设置为 private，在不添加新的属性的情况下，子类想要实现自己的 `calcArea()`该怎么办？
 
->  父类设置`getter`方法，为公开的，子类调用父类的`getter`方法即可。
+> 父类设置`getter`方法，为公开的，子类调用父类的`getter`方法即可。
 
 <div STYLE="page-break-after: always;"></div>
 

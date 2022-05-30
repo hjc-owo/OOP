@@ -1,16 +1,16 @@
 # Lab 08 Assignment
 
-## Question1 Java中的检查型异常 `(checked exception)` 和非检查型异常 `(unchecked exception)` 有什么区别？ `简答`
+## Question1 Java 中的检查型异常 `(checked exception)` 和非检查型异常 `(unchecked exception)` 有什么区别？ `简答`
 
 - 检查型异常继承自 Exception，必须对其采用 `try...catch` 处理或者 `throws` 这个异常，接受 `throws` 的上级方法也必须对其处理，否则都不能通过编译。
 - 非检查型异常继承自 Runtime Exception 或 Error，可以不用捕获，可以不在函数声明中添加 `throws` 语句，调用函数也不做强制处理，JVM 会自动处理。
 
-## Question2 简述Java异常处理中 `throws` 和 `throw` 关键字的作用。 `简答`
+## Question2 简述 Java 异常处理中 `throws` 和 `throw` 关键字的作用。 `简答`
 
 - `throws` 关键字写在方法声明后面，表示这个方法可能会出现对应的异常，但没有对其处理，而是抛出异常到上一级去处理。
 - `throw` 常用于主动抛出自定义异常，即使编译器可能并不觉得这是个异常。程序会在 throw 语句后立即终止，它后面的语句执行不到，然后在包含它的所有 try 块中（可能在上层调用函数中）从里向外寻找含有与其匹配的 catch 子句的 try 块。
 
-## Question3 请列出2个常见的运行时异常和2个非运行时异常。 `简答`
+## Question3 请列出 2 个常见的运行时异常和 2 个非运行时异常。 `简答`
 
 - 运行时异常：NullPointerException（空指针），IndexOutOfBoundsException（下标越界）
 - 非运行时异常：IOException，SQLException
@@ -43,7 +43,7 @@ public class p04 {
 
 修改后可以运行的截图如下：
 
-![截屏2022-05-14 00.29.51](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140031846.png)
+![截屏2022-05-14 00.29.51](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140031846.png)
 
 ## Question5 指出下列程序的错误并改正。 `改错`
 
@@ -86,15 +86,15 @@ public class SubClass extends SuperClass {
 
 修改后可以运行的截图如下：
 
-![截屏2022-05-14 00.37.58](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140039910.png)
+![截屏2022-05-14 00.37.58](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140039910.png)
 
 ## Question6 写出以下程序的输出。 `程序输出`
 
-![截屏2022-05-14 00.40.38](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140041722.png)
+![截屏2022-05-14 00.40.38](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140041722.png)
 
 ## Question7 写出以下程序的输出，试着解释三个函数不同输出的原因。 `程序输出`
 
-![截屏2022-05-14 00.42.45](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140043392.png)
+![截屏2022-05-14 00.42.45](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140043392.png)
 
 1. 执行顺序：try -> catch -> finally，finally 当中的语句必定被执行。
 2. 一般 finally 不会修改返回值，除非 finally 修改了该引用指向的实际内存内容。
@@ -157,4 +157,4 @@ class NotTriangleException extends Exception {
 
 运行截图如下：
 
-![截屏2022-05-14 01.05.42](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140105657.png)
+![截屏2022-05-14 01.05.42](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140105657.png)

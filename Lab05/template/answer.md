@@ -85,7 +85,7 @@
 
 ### Extra 1 策略模式（Strategy Pattern） `编程题`
 
-![截屏2022-04-08 23.48.25](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202204172139659.png)
+![截屏2022-04-08 23.48.25](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202204172139659.png)
 
 ### Extra 2 真·工厂方法模式 `编程题`
 
@@ -97,4 +97,4 @@
 
 ### Extra 4 命令模式 `编程题`
 
-![202204172137474](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205071224454.png)
+![202204172137474](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205071224454.png)

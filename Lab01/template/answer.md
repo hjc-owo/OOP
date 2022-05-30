@@ -2,43 +2,43 @@
 
 ## Question01
 
-（a）上述源文件的名字是什么？ 
+（a）上述源文件的名字是什么？
 
 - `Person.java`
 
 （b）编译上述源文件将生成几个字节码文件？这些字节码文件的名字都是什么？
 
-- 2个字节码文件，名称分别为`Person.class` `Xiti.class`
+- 2 个字节码文件，名称分别为`Person.class` `Xiti.class`
 
 （c）在命令行执行 `java Person` 得到怎样的错误提示？执行 `java xiti` 得到怎样的错误提示？执行 `java Xiti.class` 得到怎样的错误提示？执行 `java Xiti` 得到怎样的输出结果？
 
-- 执行 `java Person` 
+- 执行 `java Person`
 
 ![截屏2022-03-12 13.00.54](https://s2.loli.net/2022/04/09/96WODE7hHL3Zad2.png)
 
-- 执行 `java xiti` 
+- 执行 `java xiti`
 
 ![截屏2022-03-12 13.01.16](https://s2.loli.net/2022/04/09/j2WlXCqAHoidTJ4.png)
 
-- 执行 `java Xiti.class` 
+- 执行 `java Xiti.class`
 
 ![截屏2022-03-12 13.01.39](https://s2.loli.net/2022/04/09/NoMVkOvjKZABneX.png)
 
-- 执行 `java Xiti` 
+- 执行 `java Xiti`
 
 ![截屏2022-03-12 13.01.51](https://s2.loli.net/2022/04/09/OpvScQsYoDegmLk.png)
 
 ## Question02
 
-![截屏2022-03-12 13.13.59](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140125446.png)
+![截屏2022-03-12 13.13.59](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140125446.png)
 
 ## Question03
 
-![截屏2022-03-12 13.16.16](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140125178.png)
+![截屏2022-03-12 13.16.16](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140125178.png)
 
 ## Question04
 
-![截屏2022-03-12 13.17.55](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140125548.png)
+![截屏2022-03-12 13.17.55](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140125548.png)
 
 ## Question05
 
@@ -46,11 +46,11 @@
 
 ## Question06
 
-![截屏2022-03-12 13.35.29](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140126719.png)
+![截屏2022-03-12 13.35.29](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140126719.png)
 
 ## Question07
 
-![截屏2022-03-13 22.10.34](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140127641.png)
+![截屏2022-03-13 22.10.34](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140127641.png)
 
 ## Question08
 
@@ -58,7 +58,7 @@
 
 ## Question09
 
-![截屏2022-03-12 14.25.32](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140127628.png)
+![截屏2022-03-12 14.25.32](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140127628.png)
 
 ## Question10
 
@@ -66,17 +66,17 @@
 
 ## Question13
 
-![截屏2022-03-12 15.12.17](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128923.png)
+![截屏2022-03-12 15.12.17](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140128923.png)
 
 ## Question 11
 
-![截屏2022-03-12 15.13.39](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128011.png)
+![截屏2022-03-12 15.13.39](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140128011.png)
 
 ## Question12
 
 如图所示:
 
-![截屏2022-03-12 15.16.59](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128955.png)
+![截屏2022-03-12 15.16.59](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140128955.png)
 
 - **浅拷贝**(同一个引用):被复制对象的所有变量都含有与原来的对象相同的值，而所有的对其他对象的引用仍然指向原来的对象。换言之，浅复制仅仅复制所考虑的对象，而不复制它所引用的对象。
 
@@ -84,15 +84,15 @@
 
 ## Question13
 
-![截屏2022-03-12 15.18.32](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140128374.png)
+![截屏2022-03-12 15.18.32](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140128374.png)
 
 ## Question14
 
-![截屏2022-03-12 15.19.54](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140129083.png)
+![截屏2022-03-12 15.19.54](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140129083.png)
 
 ## Question15
 
-![截屏2022-03-12 15.30.13](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140129504.png)
+![截屏2022-03-12 15.30.13](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140129504.png)
 
 调用`strscat(new String[]{"a", "b"})`能通过编译吗？
 
@@ -108,11 +108,8 @@
 
 ## Question16
 
-![截屏2022-03-12 16.13.52](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140130753.png)
+![截屏2022-03-12 16.13.52](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140130753.png)
 
 ## Question17
 
-![截屏2022-03-12 16.13.44](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140129473.png)
-
-
-
+![截屏2022-03-12 16.13.44](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140129473.png)

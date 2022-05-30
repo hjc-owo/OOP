@@ -2,7 +2,7 @@
 
 ### Question1: 简答题
 
-标记的第4行编译会导致编译错误：原因`java: 可能尚未初始化变量m`
+标记的第 4 行编译会导致编译错误：原因`java: 可能尚未初始化变量m`
 
 ### Question2: 简答题 overload
 
@@ -19,9 +19,7 @@
 (a,b,c)=(2,3,4)
 ```
 
-![截屏2022-03-18 20.52.54](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140122563.png)
-
-
+![截屏2022-03-18 20.52.54](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140122563.png)
 
 ### Question4: 简答题 finalize
 
@@ -34,10 +32,8 @@
 
 有什么办法可以让`finalize()`在`main()`结束前一定被调用吗？
 
-
-
 不能保证一定被调用。
-因为Java无法保证finalize()会被及时执行并且根本无法保证它会被执行 (因为程序中其他线程的优先级远远高于finalize()函数线程的优先级)。
+因为 Java 无法保证 finalize()会被及时执行并且根本无法保证它会被执行 (因为程序中其他线程的优先级远远高于 finalize()函数线程的优先级)。
 
 ### Question5: 编程题
 
@@ -55,7 +51,7 @@
 文件名有：TestPerson.java
 ```
 
-![截屏2022-03-18 21.47.00](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140123653.png)
+![截屏2022-03-18 21.47.00](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140123653.png)
 
 ### Question7: 编程题
 

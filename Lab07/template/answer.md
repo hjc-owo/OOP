@@ -23,7 +23,7 @@ I am type T and my type is Animal
 I am type S and my type is Dog
 ```
 
-![截屏2022-04-22 16.41.47](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202204221642270.png)
+![截屏2022-04-22 16.41.47](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202204221642270.png)
 
 ## Question3 写出以下程序的输出(注意通配符的使用) `简答`
 
@@ -35,7 +35,7 @@ My type is Dog
 My type is Animal
 ```
 
-![截屏2022-04-22 16.44.25](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202204221645391.png)
+![截屏2022-04-22 16.44.25](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202204221645391.png)
 
 ## Question4 编写程序完成以下要求 `编程`
 
@@ -82,7 +82,7 @@ public class MyStack<T> {
 }
 ```
 
-![截屏2022-04-22 16.51.12](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202204221651450.png)
+![截屏2022-04-22 16.51.12](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202204221651450.png)
 
 ## Question5 编写程序完成以下要求 `编程`
 
@@ -105,7 +105,7 @@ public class EmailSplit {
 }
 ```
 
-![截屏2022-04-22 16.53.56](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202204221654375.png)
+![截屏2022-04-22 16.53.56](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202204221654375.png)
 
 ## Question6 编写程序完成以下要求 `编程`
 
@@ -133,4 +133,4 @@ public class TwoColorBall {
 }
 ```
 
-![截屏2022-04-22 16.58.38](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202204221658882.png)
+![截屏2022-04-22 16.58.38](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202204221658882.png)

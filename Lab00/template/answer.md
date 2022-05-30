@@ -12,25 +12,25 @@
 
 ## Question 2
 
-![2](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140132390.png)
+![2](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140132390.png)
 
 ## Question 3
 
-![3_1](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140132719.png)
+![3_1](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140132719.png)
 
-![3_2](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140132419.png)
+![3_2](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140132419.png)
 
 ## Question 4
 
-![4](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133830.png)
+![4](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133830.png)
 
 ## Question 5
 
-![5](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133493.png)
+![5](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133493.png)
 
 ## Question 6
 
-![6](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133056.png)
+![6](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133056.png)
 
 | 基本类型  | 默认值 | 基本类型    | 默认值 |
 | :-------- | :----: | :---------- | :----: |
@@ -41,24 +41,22 @@
 
 ## Question 7
 
-![7](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133620.png)
+![7](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133620.png)
 
 ## Question 8
 
-![8](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133751.png)
+![8](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133751.png)
 
 在执行 与运算 时，从前往后依次判断，只要某一项是 false ，就返回 false。
 
 可以将出现 false 可能性更大的 放在 与判别式 的前面。
 
-
-
 或判别式 同理。
 
 ## Question 9
 
-![9](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133591.png)
+![9](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133591.png)
 
 ## Question 10
 
-![10](https://cdn.jsdelivr.net/gh/hjc-owo/hjc-owo.github.io@img/202205140133394.png)
+![10](https://raw.githubusercontent.com/hjc-owo/hjc-owo.github.io/img/202205140133394.png)
